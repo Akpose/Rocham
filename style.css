@@ -1,0 +1,54 @@
+html {
+    background-image: url('/home/delle/game/Rocham/images/FightingGifs.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.header { 
+    text-align: center;
+}
+
+body {
+    color: rgba(255, 255, 255, 0.836);
+    text-shadow: 2px 4px 4px rgba(99, 48, 1, 0.836);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.middle1 {
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+.left-div {
+    display: flex;
+    gap: 16px;
+}
+.right-div {
+    display: flex;
+    gap: 16px;
+}
+
+.middle2 {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.versus {
+    font-size: 80px;
+    font-weight: bolder;
+}
+.entryp {
+    height: 80px;
+    width: 60px;
+    background-color: rgba(184, 66, 11, 0.836);
+}
+.entryc {
+    height: 80px;
+    width: 60px;
+    background-color: rgba(184, 66, 11, 0.836);
+}

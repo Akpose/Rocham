@@ -5,30 +5,34 @@ function welcome() {
     alert("Welcome to the old-school game Rock-Paper-Scissors. The rules are simple: Rock beats scissors, scissors beats paper, paper beats rock.");
 }
 
-function game(numOfRounds) {
-    welcome();
+// function game(numOfRounds) {
+//     welcome();
 
-    do {
-        let cc = getComputerChoice(array);
-        let pc = getPlayerChoice();
-        let result = compareChoices(cc, pc);
-        updateScore(result, 1);
+//     do {
+//         let cc = getComputerChoice(array);
+//         let pc = getPlayerChoice();
+//         let result = compareChoices(cc, pc);
+//         updateScore(result, 1);
 
-        if (result !== 0) {
-            numOfRounds--;
-        }
+//         if (result !== 0) {
+//             numOfRounds--;
+//         }
 
-    } while (numOfRounds > 0);
-    if (player > computer) {
-        alert("FINAL SCORE")
-        alert(`Player = ${player}  VS  Computer = ${computer}`);
-        alert("Congratulations! YOU WIN");
-    } 
-    alert(`Player = ${player}  VS  Computer = ${computer}`);
-    alert("SORRY! YOU LOSE");
+//     } while (numOfRounds > 0);
+//     if (player > computer) {
+//         alert("FINAL SCORE")
+//         alert(`Player = ${player}  VS  Computer = ${computer}`);
+//         alert("Congratulations! YOU WIN");
+//     } 
+//     alert(`Player = ${player}  VS  Computer = ${computer}`);
+//     alert("SORRY! YOU LOSE");
 
-    clearScoreBoard();
-}
+//     clearScoreBoard();
+// }
+
+
+
+
 
 const array = ["Rock", "Paper", "Scissors"];
 
@@ -92,4 +96,4 @@ function clearScoreBoard() {
 
 
 
-game(5);
+// game(5);
