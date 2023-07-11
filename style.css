@@ -13,6 +13,22 @@ html {
     text-align: center;
 }
 
+#message {
+    font-size: 20px;
+    background-color: rgba(0, 7, 3, 0.699);
+    color: #ffc600;
+}
+
+span{
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker{
+    50%{
+      opacity: 0;
+    }
+  }
+
 body {
     color: rgba(255, 255, 255, 0.836);
     text-shadow: 2px 4px 4px rgba(99, 48, 1, 0.836);
@@ -24,20 +40,29 @@ body {
     justify-content: center;
     gap: 500px;
 }
-.left-div {
+.leftdiv {
     display: flex;
     gap: 16px;
 }
-.right-div {
+.rightdiv {
     display: flex;
     gap: 16px;
 }
 
 .middle2 {
     display: flex;
+    flex-direction: column;
     gap: 32px;
     justify-content: center;
 }
+
+#visible {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
 .versus {
     font-size: 80px;
     font-weight: bolder;
@@ -45,10 +70,48 @@ body {
 .entryp {
     height: 80px;
     width: 60px;
-    background-color: rgba(184, 66, 11, 0.836);
+    background-color: rgba(0, 7, 3, 0.699);
+    text-align: center;
+    border-color: #fffcef;
+    box-shadow: 0 0 1rem #fffcef;
 }
 .entryc {
     height: 80px;
     width: 60px;
-    background-color: rgba(184, 66, 11, 0.836);
+    background-color: rgba(0, 7, 3, 0.699);
+    text-align: center;
+    border-color: #fffcef;
+    box-shadow: 0 0 1rem #fffcef;
 }
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
+  #declare {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 7, 3, 0.699);
+    font-weight: bolder;
+  }
+
+  .updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .updates #update1 {
+    background-color: rgba(0, 7, 3, 0.699);
+    font-size: 60px;
+  }
+  .updates #update2 {
+    background-color: rgba(0, 7, 3, 0.699);
+    font-size: 60px;
+  }
+  .updates .column {
+    font-size: 60px;
+    color: #ffc600;
+  }
